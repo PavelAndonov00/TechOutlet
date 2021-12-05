@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #D0D7DF;
+    height: 100%;
+    position: relative
+}
+
+body::before {
+    content: "";
+    background: url("./assets/maxresdefault.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
