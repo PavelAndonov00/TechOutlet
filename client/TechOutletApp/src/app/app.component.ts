@@ -1,11 +1,5 @@
 import { Component } from '@angular/core';
 
-interface Card {
-  imageSrc: string;
-  title: string;
-  description: string;
-}
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,18 +7,6 @@ interface Card {
 })
 export class AppComponent {
   title = 'TechOutletApp';
-  cards: Card[];
 
-  constructor() {
-    this.cards = [
-      {imageSrc: "../assets/hp.png", title: "Laptop HP Pavillion 15", description: "Super fast laptop"},
-      {imageSrc: "../assets/hp.png", title: "Laptop HP Pavillion 15", description: "Super fast laptop"},
-      {imageSrc: "../assets/hp.png", title: "Laptop HP Pavillion 15", description: "Super fast laptop"},
-      {imageSrc: "../assets/hp.png", title: "Laptop HP Pavillion 15", description: "Super fast laptop"},
-      {imageSrc: "../assets/hp.png", title: "Laptop HP Pavillion 15", description: "Super fast laptop"},
-      {imageSrc: "../assets/hp.png", title: "Laptop HP Pavillion 15", description: "Super fast laptop"}
-    ];
-  }
-
-
+  constructor() {}
 }
