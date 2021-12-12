@@ -3,10 +3,27 @@ html {
     height: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d0d7df;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 body {
-    background-color: #D0D7DF;
+    background-color: #d0d7df;
     height: 100%;
-    position: relative
+    position: relative;
+    overflow-y: scroll;
 }
 
 body::before {
