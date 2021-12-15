@@ -1,0 +1,39 @@
+.card {
+    height: 23rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30rem;
+    background-color: #17a2b8;
+}
+
+.socialicon-wrapper {
+    position: absolute;
+    right: 1.5rem;
+    top: -2rem;
+}
+
+.social-icon {
+    width: 3rem;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    border: 3px solid;
+}
+
+.remember input {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1.3rem;
+    margin-right: 0.3rem;
+}
+
+.input-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.input-wrap {
+    border: 1px solid;
+    margin-right: 0.2px;
+}
