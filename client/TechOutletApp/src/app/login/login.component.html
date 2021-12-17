@@ -2,8 +2,9 @@
     <div class="d-flex justify-content-center h-100">
         <div class="card">
             <div class="card-header">
-                <h3>Sign In</h3>
-                <div class="d-flex justify-content-end socialicon-wrapper">
+                <h3 *ngIf="!register">Sign In</h3>
+                <h3 *ngIf="register">Register</h3>
+                <div *ngIf="!register" class="d-flex justify-content-end socialicon-wrapper">
                     <img class="social-icon bg-light d-flex align-items-center p-2 m-1" src="../assets/facebook.png" alt="facebook">
                     <img class="social-icon bg-light d-flex align-items-center p-2 m-1" src="../assets/google-plus.png" alt="Google">
                     <img class="social-icon bg-light d-flex align-items-center p-2 m-1" src="../assets/twitter.png" alt="Twitter">
@@ -15,24 +16,30 @@
                         <div class="input-group-prepend input-wrap bg-light d-flex align-items-center p-2">
                             <img class="input-icon" src="../assets/user.png" alt="User">
                         </div>
-                        <input type="text" class="form-control" placeholder="Username">
+                        <input name="username" type="text" class="form-control" placeholder="Username">
 
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend input-wrap bg-light d-flex align-items-center p-2">
                             <img class="input-icon" src="../assets/password-key.png" alt="Password">
                         </div>
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input name="password" type="password" class="form-control" placeholder="Password">
                     </div>
-                    <div class="row align-items-center remember">
+                    <div *ngIf="register" class="input-group form-group">
+                        <div class="input-group-prepend input-wrap bg-light d-flex align-items-center p-2">
+                            <img class="input-icon" src="../assets/password-key.png" alt="Confirm Password">
+                        </div>
+                        <input name="confirmpassword" type="password" class="form-control" placeholder="Confirm Password">
+                    </div>
+                    <div *ngIf="!register" class="row align-items-center remember">
                         <input type="checkbox">Remember Me
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Login" class="btn btn-light float-right login_btn">
+                        <input type="submit" [value]="register ? 'Register' : 'Login'" class="btn btn-light float-right login_btn">
                     </div>
                 </form>
             </div>
-            <div class="card-footer">
+            <div *ngIf="!register" class="card-footer">
                 <div class="d-flex justify-content-center links">
                     <b>Don't have an account?</b><a class="ml-1 text-light" routerLink="/register">Sign Up</a>
                 </div>
