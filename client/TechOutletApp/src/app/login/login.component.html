@@ -1,52 +1,52 @@
-<div class="container mt-5">
-    <div class="d-flex justify-content-center h-100">
-        <div class="card">
-            <div class="card-header">
+<section class="container mt-5">
+    <section class="d-flex justify-content-center h-100">
+        <section class="card">
+            <section class="card-header">
                 <h3 *ngIf="!register">Sign In</h3>
                 <h3 *ngIf="register">Register</h3>
-                <div *ngIf="!register" class="d-flex justify-content-end socialicon-wrapper">
+                <article *ngIf="!register" class="d-flex justify-content-end socialicon-wrapper">
                     <img class="social-icon bg-light d-flex align-items-center p-2 m-1" src="../assets/facebook.png" alt="facebook">
                     <img class="social-icon bg-light d-flex align-items-center p-2 m-1" src="../assets/google-plus.png" alt="Google">
                     <img class="social-icon bg-light d-flex align-items-center p-2 m-1" src="../assets/twitter.png" alt="Twitter">
-                </div>
-            </div>
-            <div class="card-body">
+                </article>
+            </section>
+            <section class="card-body">
                 <form>
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend input-wrap bg-light d-flex align-items-center p-2">
+                    <article class="input-group form-group">
+                        <article class="input-group-prepend input-wrap bg-light d-flex align-items-center p-2">
                             <img class="input-icon" src="../assets/user.png" alt="User">
-                        </div>
+                        </article>
                         <input name="username" type="text" class="form-control" placeholder="Username">
 
-                    </div>
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend input-wrap bg-light d-flex align-items-center p-2">
+                    </article>
+                    <article class="input-group form-group">
+                        <article class="input-group-prepend input-wrap bg-light d-flex align-items-center p-2">
                             <img class="input-icon" src="../assets/password-key.png" alt="Password">
-                        </div>
+                        </article>
                         <input name="password" type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div *ngIf="register" class="input-group form-group">
-                        <div class="input-group-prepend input-wrap bg-light d-flex align-items-center p-2">
+                    </article>
+                    <article *ngIf="register" class="input-group form-group">
+                        <article class="input-group-prepend input-wrap bg-light d-flex align-items-center p-2">
                             <img class="input-icon" src="../assets/password-key.png" alt="Confirm Password">
-                        </div>
+                        </article>
                         <input name="confirmpassword" type="password" class="form-control" placeholder="Confirm Password">
-                    </div>
-                    <div *ngIf="!register" class="row align-items-center remember">
+                    </article>
+                    <article *ngIf="!register" class="row align-items-center remember">
                         <input type="checkbox">Remember Me
-                    </div>
-                    <div class="form-group">
+                    </article>
+                    <article class="form-group">
                         <input type="submit" [value]="register ? 'Register' : 'Login'" class="btn btn-light float-right login_btn">
-                    </div>
+                    </article>
                 </form>
-            </div>
-            <div *ngIf="!register" class="card-footer">
-                <div class="d-flex justify-content-center links">
+            </section>
+            <section *ngIf="!register" class="card-footer">
+                <article class="d-flex justify-content-center links">
                     <b>Don't have an account?</b><a class="ml-1 text-light" routerLink="/register">Sign Up</a>
-                </div>
-                <div class="d-flex justify-content-center">
+                </article>
+                <article class="d-flex justify-content-center">
                     <a class="ml-1 text-light" routerLink="/forgotpassword">Forgot your password?</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                </article>
+            </section>
+        </section>
+    </section>
+</section>
