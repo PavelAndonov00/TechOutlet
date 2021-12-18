@@ -8,6 +8,8 @@ import { NavComponent } from './nav/nav.component';
 import { CardComponent } from './card/card.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { AdvertComponent } from './advert/advert.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { LoginComponent } from './login/login.component';
     NavComponent,
     CardComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    AdvertComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

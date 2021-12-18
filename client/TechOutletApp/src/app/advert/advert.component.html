@@ -1,0 +1,23 @@
+<section class="h-100 d-flex justify-content-center">
+    <section class="inner-container mt-5 bg-info rounded">
+        <h3 class="ml-3 mt-3">Add advert</h3>
+        <form class="p-3">
+            <article class="form-group">
+                <input name="title" type="text" placeholder="Title" class="form-control">
+            </article>
+            <article class="form-group">
+                <textarea  name="description" type="text" placeholder="Description" class="form-control"></textarea>
+            </article>
+            <article class="form-group">
+                <label class="upload-image bg-light p-2 rounded">
+                    Upload image
+                    <input ngModel #image="ngModel" name="image" (change)="log(image)" type="file" class="form-control d-none">
+                    <img *ngIf="image.valid && image.dirty" src="../../assets/correct.png" alt="Correct" class="img-correct ml-1">
+                    <img *ngIf="image.invalid && image.dirty" src="../../assets/incorrect.png" alt="Correct" class="img-correct ml-1">
+                </label>
+                
+            </article>
+            <input type="submit" class="btn btn-light float-right mb-3" value="Create">
+        </form>
+    </section>
+</section>
