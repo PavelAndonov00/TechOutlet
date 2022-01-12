@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AdvertComponent } from './advert/advert.component';
 import { FormsModule } from '@angular/forms';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     CardComponent,
     HomeComponent,
     LoginComponent,
-    AdvertComponent
+    AdvertComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

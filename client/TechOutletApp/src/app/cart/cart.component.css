@@ -1,0 +1,19 @@
+.shopping-cart-container .cart-item {
+    width: 50rem;
+}
+
+.shopping-cart-container .cart-item .item-image {
+    width: 10rem;
+}
+
+.shopping-cart-container .item-description {
+    font-weight: bold;
+}
+
+.shopping-cart-container .cart-item .item-count {
+    width: 4rem;
+}
+
+.shopping-cart-container .total {
+    width: 15rem;
+}
